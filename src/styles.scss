@@ -1,1 +1,157 @@
 /* You can add global styles to this file, and also import other style files */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'calibre';
+  src: url('assets/fonts/calibre/calibre-web-regular.woff') format("woff"),
+  url('assets/fonts/calibre/calibre-web-regular.woff2') format("woff2"),
+  url('assets/fonts/calibre/calibre-web-regular.eot') format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'calibre-medium';
+  src: url('assets/fonts/calibre/calibre-web-medium.woff') format("woff"),
+  url('assets/fonts/calibre/calibre-web-medium.woff2') format("woff2"),
+  url('assets/fonts/calibre/calibre-web-medium.eot') format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'calibre-semibold';
+  src: url('assets/fonts/calibre/calibre-web-semibold.woff') format("woff"),
+  url('assets/fonts/calibre/calibre-web-semibold.woff2') format("woff2"),
+  url('assets/fonts/calibre/calibre-web-semibold.eot') format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'calibre-bold';
+  src: url('assets/fonts/calibre/calibre-web-bold.woff') format("woff"),
+  url('assets/fonts/calibre/calibre-web-bold.woff2') format("woff2"),
+  url('assets/fonts/calibre/calibre-web-bold.eot') format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  font-family: 'calibre', "Helvetica Neue", sans-serif;
+  }
+
+html,
+body {
+  height: 100%;
+  overflow: hidden;
+}
+body {
+  margin: 0;
+}
+
+.mat-mdc-text-field-wrapper {
+  background: #ffffff;
+}
+.form-label,
+.mdc-label,
+.mat-mdc-select-value-text,
+.mat-mdc-option.mdc-list-item--selected:not(.mdc-list-item--disabled) .mdc-list-item__primary-text,
+.mat-mdc-option
+{
+  color: #515151 !important;
+  font-size: 1rem !important;
+}
+.form-label{
+  font-family: 'calibre-medium';
+}
+
+.mat-mdc-option.mdc-list-item--selected:not(.mdc-list-item--disabled):not(.mat-mdc-option-multiple){
+    background-color: #DCFCEE !important;
+}
+
+.mat-mdc-option .mat-pseudo-checkbox{
+    --mat-minimal-pseudo-checkbox-selected-checkmark-color:#003F2D !important;
+}
+
+.mat-mdc-select-arrow svg{
+    fill:#696E6C !important;
+}
+
+div.mat-mdc-select-panel{
+    background-color: #ffffff !important;
+    padding-top:0 !important;
+    padding-bottom:0 !important;
+}
+
+.mat-mdc-option:hover:not(.mdc-list-item--disabled){
+    background-color: rgba(202,209,211,0.44) !important;
+}
+
+// .mat-mdc-form-field{
+//   width:100%;
+// }
+
+.mdc-checkbox__background{
+    border-color: #C4C4C4 !important;
+    background: #ffffff !important;
+}
+
+.mdc-checkbox__native-control:enabled:checked~.mdc-checkbox__background{
+  background: #003f2d !important;
+  border-color: #003f2d !important;
+}
+
+.mdc-button__label {
+  color: #003f2d;
+  font-size: 1rem;
+  font-family: 'calibre';
+}
+
+.mat-mdc-outlined-button:not(:disabled) {
+  background: #cad1d3;
+  border: none;
+  line-height: 1rem;
+  padding: 0 0.5rem; 
+}
+
+.active-tab.mat-mdc-outlined-button:not(:disabled) {
+  background: #003f2d;
+}
+.active-tab .mdc-button__label {
+  color: #ffffff;
+  font-family: 'calibre-medium';
+}
+
+.mdc-text-field--outlined:not(.mdc-text-field--disabled) .mat-mdc-notch-piece{
+    border-color:#CBCDCB !important;
+}
+
+.mdc-text-field--outlined .mat-mdc-form-field-infix, .mdc-text-field--no-label .mat-mdc-form-field-infix{
+  padding: 0.5rem 0 !important;
+  min-height: 2rem !important;
+}
+
+.mat-mdc-option .mdc-list-item__primary-text{
+  font-family: 'calibre' !important;
+}
+
+.mdc-text-field--outlined, .mat-mdc-option{
+  padding: 0 0.5rem !important;
+}
+
+.mat-mdc-option .mat-pseudo-checkbox-minimal{
+  margin-left: 0.25rem !important;
+}
+
+.field-width-1{
+  width: 27%
+}
+.field-width-2{
+  width: 50%;
+}
+.field-width-3{
+  width: 80%;
+}
